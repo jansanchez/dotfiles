@@ -40,10 +40,20 @@ if [ ! -d "vim-coffee-script" ]; then
     git clone https://github.com/kchmck/vim-coffee-script.git vim-coffee-script
 fi
 
+# Install vim-delimit-mate
+if [ ! -d "vim-delimit-mate" ]; then
+    git clone https://github.com/Raimondi/delimitMate.git vim-delimit-mate
+fi
+
+# Install vim-surround
+if [ ! -d "vim-surround" ]; then
+    git clone https://github.com/tpope/vim-surround.git vim-surround
+fi
+
+
+
+
 
 
 echo "[Vim y sus plugins Instalados]"
-
-
-
 
