@@ -73,11 +73,15 @@ if [ ! -d "vim-css" ]; then
     git clone https://github.com/hail2u/vim-css3-syntax.git vim-css
 fi
 
-# Install vim-sylus
+# Install vim-stylus
 if [ ! -d "vim-stylus" ]; then
     git clone https://github.com/wavded/vim-stylus.git vim-stylus
 fi
 
+# Install vim-sneak
+if [ ! -d "vim-sneak" ]; then
+    git clone https://github.com/justinmk/vim-sneak.git vim-sneak
+fi
 
 echo "[Vim y sus plugins Instalados]"
 
