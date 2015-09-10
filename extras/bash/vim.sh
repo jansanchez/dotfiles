@@ -35,10 +35,6 @@ if [ ! -d "vim-easymotion" ]; then
     git clone git://github.com/Lokaltog/vim-easymotion.git vim-easymotion
 fi
 
-# Install vim-coffee-script
-if [ ! -d "vim-coffee-script" ]; then
-    git clone https://github.com/kchmck/vim-coffee-script.git vim-coffee-script
-fi
 
 # Install vim-delimit-mate
 if [ ! -d "vim-delimit-mate" ]; then
@@ -57,7 +53,30 @@ fi
 
 
 
+# Install vim-coffee-script
+if [ ! -d "vim-coffee-script" ]; then
+    git clone https://github.com/kchmck/vim-coffee-script.git vim-coffee-script
+fi
 
+# Install vim-jade
+if [ ! -d "vim-jade" ]; then
+    git clone https://github.com/digitaltoad/vim-jade.git vim-jade
+fi
+
+# Install vim-javascript
+if [ ! -d "vim-javascript" ]; then
+    git clone https://github.com/pangloss/vim-javascript vim-javascript
+fi
+
+# Install vim-css
+if [ ! -d "vim-css" ]; then
+    git clone https://github.com/hail2u/vim-css3-syntax.git vim-css
+fi
+
+# Install vim-sylus
+if [ ! -d "vim-stylus" ]; then
+    git clone https://github.com/wavded/vim-stylus.git vim-stylus
+fi
 
 
 echo "[Vim y sus plugins Instalados]"
