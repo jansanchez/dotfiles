@@ -50,6 +50,11 @@ if [ ! -d "vim-surround" ]; then
     git clone https://github.com/tpope/vim-surround.git vim-surround
 fi
 
+# Install vim-multiple-cursors
+if [ ! -d "vim-multiple-cursors" ]; then
+    git clone https://github.com/terryma/vim-multiple-cursors.git vim-multiple-cursors
+fi
+
 
 
 
