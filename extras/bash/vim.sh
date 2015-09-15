@@ -83,5 +83,11 @@ if [ ! -d "vim-sneak" ]; then
     git clone https://github.com/justinmk/vim-sneak.git vim-sneak
 fi
 
+# Install vim-editorconfig
+if [ ! -d "vim-editorconfig" ]; then
+    git clone https://github.com/editorconfig/editorconfig-vim.git vim-editorconfig
+fi
+
+
 echo "[Vim y sus plugins Instalados]"
 
