@@ -64,6 +64,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+
 plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-vim-mode zsh-url-highlighter)
 
 # Customize to your needs...
@@ -87,9 +88,10 @@ export GOPATH="$HOME/"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # enhancd
-if [ -f "/home/jan/.enhancd/zsh/enhancd.zsh" ]; then
-    source "/home/jan/.enhancd/zsh/enhancd.zsh"
+if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
+    source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
 

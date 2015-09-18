@@ -33,5 +33,5 @@ go get github.com/mattn/gof
 go get github.com/peco/peco/cmd/peco
 
 ENHANCED_FILTER=percol:peco:zfz
-
+export ENHANCD_FILTER
 
