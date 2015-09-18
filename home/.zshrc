@@ -83,5 +83,13 @@ if [ -f ~/.custom_functions ]; then
 fi
 
 
+export GOPATH="$HOME/"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# enhancd
+if [ -f "/home/jan/.enhancd/zsh/enhancd.zsh" ]; then
+    source "/home/jan/.enhancd/zsh/enhancd.zsh"
+fi
 
 

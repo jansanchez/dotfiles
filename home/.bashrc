@@ -110,3 +110,5 @@ if [ -f ~/.custom_functions ]; then
     . ~/.custom_functions
 fi
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
