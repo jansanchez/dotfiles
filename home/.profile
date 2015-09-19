@@ -30,4 +30,8 @@ fi
 
 export PATH=$PATH:/usr/local/go/bin
 
+ENHANCD_FILTER=percol:peco:zfz
+export ENHANCD_FILTER
 
+ENHANCD_DIR=~/.enhancd
+export ENHANCD_DIR

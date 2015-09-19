@@ -6,7 +6,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-
 ZSH_THEME="half-life"
 
 #ZSH_THEME="ginux"
@@ -26,8 +25,6 @@ ZSH_THEME="half-life"
 #ZSH_THEME="avit"
 #ZSH_THEME="crunch"
 #ZSH_THEME="gallifrey"
-
-
 
 
 
@@ -65,7 +62,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-vim-mode zsh-url-highlighter)
+plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-url-highlighter)
 
 # Customize to your needs...
 
@@ -83,9 +80,9 @@ if [ -f ~/.custom_functions ]; then
     source ~/.custom_functions
 fi
 
-
-export GOPATH="$HOME/"
-
+if [ -f ~/.profile ]; then
+    source ~/.profile
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -95,3 +92,7 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
 fi
 
 
+# enhancd
+if [ -f "/home/jan/.enhancd/zsh/enhancd.zsh" ]; then
+    source "/home/jan/.enhancd/zsh/enhancd.zsh"
+fi
