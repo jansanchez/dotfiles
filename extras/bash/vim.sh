@@ -88,6 +88,11 @@ if [ ! -d "vim-editorconfig" ]; then
     git clone https://github.com/editorconfig/editorconfig-vim.git vim-editorconfig
 fi
 
+# Install vim-gitgutter
+if [ ! -d "vim-gitgutter" ]; then
+    git clone https://github.com/airblade/vim-gitgutter.git vim-gitgutter
+fi
+
 
 echo "[Vim y sus plugins Instalados]"
 
