@@ -20,3 +20,6 @@ sudo apt-get install git-extras
 
 #sudo pecl install mongo
 
+sudo easy_install Pygments
+
+
