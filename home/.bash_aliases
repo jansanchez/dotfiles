@@ -149,13 +149,12 @@ fi
 
 # `cat` with beautiful colors. requires Pygments installed.
 # 							   sudo easy_install Pygments
-alias c='pygmentize -O style=monokai -f console256 -g'
+alias cati='pygmentize -O style=monokai -f console256 -g'
 
 # GIT STUFF
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
-
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
