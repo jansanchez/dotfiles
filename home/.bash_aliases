@@ -199,6 +199,7 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Shortcuts
 alias g="git"
 alias v="vim"
+alias vif="vim + "
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -208,7 +209,6 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
-
 
 # Run DropboxUploader if you have it installed
 alias dropbox="~/code/Dropbox-Uploader/dropbox_uploader.sh $1"
@@ -274,9 +274,12 @@ alias cls='clear'
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
 
+# alias for websites
+
+alias gh='google-chrome https://github.com/jansanchez'
+alias gmail='google-chrome https://gmail.com'
+
 # aliases for edit
-
-
 
 
 
