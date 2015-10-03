@@ -93,6 +93,10 @@ if [ ! -d "vim-gitgutter" ]; then
     git clone https://github.com/airblade/vim-gitgutter.git vim-gitgutter
 fi
 
+# Install vim-airline
+if [ ! -d "vim-airline" ]; then
+    git clone https://github.com/bling/vim-airline vim-airline
+fi
 
 echo "[Vim y sus plugins Instalados]"
 
