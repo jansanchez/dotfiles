@@ -464,3 +464,4 @@ set number
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.tar.gz
 set wildignore+=*/node_modules/*
 
+
