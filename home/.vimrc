@@ -460,3 +460,7 @@ execute pathogen#infect()
 " setting number
 set number
 
+" ignoring file types for ctrlp plugin
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.tar.gz
+set wildignore+=*/node_modules/*
+
