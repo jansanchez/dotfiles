@@ -98,5 +98,16 @@ if [ ! -d "vim-airline" ]; then
     git clone https://github.com/bling/vim-airline vim-airline
 fi
 
-echo "[Vim y sus plugins Instalados]"
+# Install vim-ctrlp
+if [ ! -d "vim-ctrlp" ]; then
+    git clone https://github.com/ctrlpvim/ctrlp.vim.git vim-ctrlp
+fi
 
+# Install vim-ctrlp-py-matcher
+if [ ! -d "vim-ctrlp-py-matcher" ]; then
+    git clone https://github.com/FelikZ/ctrlp-py-matcher.git vim-ctrlp-py-matcher
+fi
+
+
+
+echo "[Vim y sus plugins Instalados]"
