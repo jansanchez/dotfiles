@@ -3,8 +3,8 @@
 OPT_FOLDER="/opt"
 BUNDLE_FOLDER="~/.vim/bundle/"
 
-#sudo apt-get update
-#sudo apt-get install vim
+sudo apt-get update
+sudo apt-get install vim
 
 #vim --version
 
@@ -108,6 +108,9 @@ if [ ! -d "vim-ctrlp-py-matcher" ]; then
     git clone https://github.com/FelikZ/ctrlp-py-matcher.git vim-ctrlp-py-matcher
 fi
 
-
+# Install vim-mustache-handlebars
+if [ ! -d "vim-mustache-handlebars" ]; then
+    git clone https://github.com/mustache/vim-mustache-handlebars.git vim-mustache-handlebars
+fi
 
 echo "[Vim y sus plugins Instalados]"
