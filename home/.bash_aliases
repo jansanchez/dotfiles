@@ -272,6 +272,8 @@ alias cls='clear'
 
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
 
 # alias for websites
 
@@ -279,8 +281,6 @@ alias gh='google-chrome https://github.com/jansanchez'
 alias gmail='google-chrome https://gmail.com'
 
 # aliases for edit
-
-
 
 export TERM=xterm-256color
 
