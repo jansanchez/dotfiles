@@ -284,4 +284,6 @@ alias gmail='google-chrome https://gmail.com'
 
 export TERM=xterm-256color
 
+# local server
+alias server='python -m SimpleHTTPServer'
 
