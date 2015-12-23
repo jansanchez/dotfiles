@@ -113,4 +113,9 @@ if [ ! -d "vim-mustache-handlebars" ]; then
     git clone https://github.com/mustache/vim-mustache-handlebars.git vim-mustache-handlebars
 fi
 
+# Install vim-maximizer
+if [ ! -d "vim-maximizer" ]; then
+    git clone https://github.com/szw/vim-maximizer.git vim-maximizer 
+fi
+
 echo "[Vim y sus plugins Instalados]"
