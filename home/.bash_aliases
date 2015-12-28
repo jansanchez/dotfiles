@@ -272,6 +272,7 @@ alias cls='clear'
 
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
+alias install='sudo apt-get install '
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 
