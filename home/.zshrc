@@ -91,7 +91,6 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
-
 # enhancd
 if [ -f "/home/jan/.enhancd/zsh/enhancd.zsh" ]; then
     source "/home/jan/.enhancd/zsh/enhancd.zsh"
