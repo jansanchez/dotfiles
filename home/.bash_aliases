@@ -87,6 +87,10 @@ function father_branch() {
 git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
 }
 
+function killkaraoke() {
+pactl unload-module $(pactl list short modules | awk '$2 =="module-loopback" { print $1 }' - )
+}
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -287,4 +291,6 @@ export TERM=xterm-256color
 
 # local server
 alias server='python -m SimpleHTTPServer'
+
+alias karaoke='pactl load-module module-loopback latency_msec=1'
 
