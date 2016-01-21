@@ -61,21 +61,19 @@ alias 	brillo='echo 6 | sudo tee  /sys/class/backlight/acpi_video0/brightness'
 alias	off='sudo halt'
 alias	reset='sudo reboot'
 
-alias   menu='tint2restart && clear'
-
 function glas() {
-echo " > git log --name-only --pretty=format: --author=$1 --since=$2 | sort | uniq"
-git log --name-only --pretty=format: --author="$1" --since=$2 | sort | uniq
+	echo " > git log --name-only --pretty=format: --author=$1 --since=$2 | sort | uniq"
+	git log --name-only --pretty=format: --author="$1" --since=$2 | sort | uniq
 }
 
 function access() {
-echo " > ssh -v ${1:-'cuenta@dominio.pe'}"
-ssh -v ${1:-'cuenta@dominio.pe'}
+	echo " > ssh -v ${1:-'cuenta@dominio.pe'}"
+	ssh -v ${1:-'cuenta@dominio.pe'}
 }
 
 function restart() {
-echo " > sudo service $1 restart"
-sudo service $1 restart
+	echo " > sudo service $1 restart"
+	sudo service $1 restart
 }
 
 function tmuxp() {
@@ -84,11 +82,11 @@ function tmuxp() {
 }
 
 function father_branch() {
-git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
+	git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
 }
 
 function killkaraoke() {
-pactl unload-module $(pactl list short modules | awk '$2 =="module-loopback" { print $1 }' - )
+	pactl unload-module $(pactl list short modules | awk '$2 =="module-loopback" { print $1 }' - )
 }
 
 # Easier navigation: .., ..., ~ and -
@@ -118,20 +116,20 @@ function wifi() {
 }
 
 function m() {
-    sublime $1
+	sublime $1
 }
 
 # general shortcuts
 alias pro="cd ~/htdocs/"
 
 # be nice
-alias please=sudo
+alias please="sudo"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-    colorflag="--color"
+	colorflag="--color"
 else # OS X `ls`
-    colorflag="-G"
+	colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -145,10 +143,10 @@ alias lsd='ls -l | grep "^d"'
 
 # Always use color output for `ls`
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-    alias ls="command ls -G"
+	alias ls="command ls -G"
 else
-    alias ls="command ls --color"
-    export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
+	alias ls="command ls --color"
+	export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
 fi
 
 # `cat` with beautiful colors. requires Pygments installed.
@@ -182,16 +180,13 @@ alias npmg="sudo npm install -g"
 alias npmu="sudo npm update"
 alias npmr="sudo npm uninstall"
 alias npmrg="sudo npm uninstall -g"
-
-alias isave="sudo npm install --save"
-alias isavedev="sudo npm install --save-dev"
-
+alias run="npm run "
+alias isave="sudo npm install --save "
+alias isavedev="sudo npm install --save-dev "
 
 # View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'" # sudo apt-get install ngrep
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
-
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
@@ -218,7 +213,7 @@ alias dropbox="~/code/Dropbox-Uploader/dropbox_uploader.sh $1"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-    alias "$method"="lwp-request -m '$method'"
+	alias "$method"="lwp-request -m '$method'"
 done
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
@@ -227,19 +222,9 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 alias androide="bash /opt/android-studio/bin/studio.sh &"
-
-#alias chaplin='cd frontend/chaplin/ && make && cd ../..'
-
 alias home='cd ~/'
 
-#alias chaplin='coffee --watch --bare --output src/public/static/js/um/ frontend/chaplin/coffee/'
-
-alias cafe='coffee --watch --bare --output src/public/static/js/ frontend/cafe/'
-
-alias jadeflux='jade --pretty --watch '
-
 alias tmuxd='~/dotfiles/tmxs/development'
-
 alias tmuxjp='~/dotfiles/tmxs/jqueryplugins'
 
 #Utils#
@@ -251,7 +236,6 @@ alias cls='clear'
 
 
 # aliases for apt-get
-
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
 alias install='sudo apt-get install '
@@ -271,4 +255,5 @@ export TERM=xterm-256color
 alias server='python -m SimpleHTTPServer'
 
 alias karaoke='pactl load-module module-loopback latency_msec=1'
+
 
