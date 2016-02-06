@@ -6,7 +6,8 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="half-life"
+ZSH_THEME="random"
+# ZSH_THEME="half-life"
 
 #ZSH_THEME="ginux"
 #ZSH_THEME="norm"
@@ -25,7 +26,7 @@ ZSH_THEME="half-life"
 #ZSH_THEME="avit"
 #ZSH_THEME="crunch"
 #ZSH_THEME="gallifrey"
-
+#ZSH_THEME="fino"
 
 
 # Example aliases
@@ -91,4 +92,7 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
+# if [ -f ~/braziljs-watch.sh ]; then
+    # source ~/braziljs-watch.sh
+# fi
 
