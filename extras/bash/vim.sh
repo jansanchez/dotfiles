@@ -118,4 +118,14 @@ if [ ! -d "vim-maximizer" ]; then
     git clone https://github.com/szw/vim-maximizer.git vim-maximizer 
 fi
 
+# Install vim-babel
+if [ ! -d "vim-babel" ]; then
+    git clone https://github.com/jbgutierrez/vim-babel.git vim-babel 
+fi
+
+# Install vim-webapi
+if [ ! -d "vim-webapi" ]; then
+    git clone https://github.com/mattn/webapi-vim.git vim-webapi
+fi
+
 echo "[Vim y sus plugins Instalados]"
