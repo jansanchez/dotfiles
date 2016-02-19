@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 NODE_OLD_VERSION="v0.11.8"
-NODE_NEW_VERSION="v0.12.0"
+NODE_NEW_VERSION="v0.12.9"
 
 OPT_FOLDER="/opt"
 
