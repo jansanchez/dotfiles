@@ -92,7 +92,4 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
-# if [ -f ~/braziljs-watch.sh ]; then
-    # source ~/braziljs-watch.sh
-# fi
 
