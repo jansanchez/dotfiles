@@ -85,9 +85,9 @@ if [ -f ~/.profile ]; then
     source ~/.profile
 fi
 
-if [ -f ~/.fzf.zsh ]; then
-    source ~/.fzf.zsh
-fi
+#if [ -f ~/.fzf.zsh ]; then
+#    source ~/.fzf.zsh
+#fi
 
 # enhancd
 if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
