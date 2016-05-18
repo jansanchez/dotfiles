@@ -63,7 +63,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-url-highlighter)
+plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-url-highlighter zsh-wakatime)
 
 # Customize to your needs...
 
@@ -94,4 +94,6 @@ if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
     source "~/.enhancd/zsh/enhancd.zsh"
 fi
 
+# Wakatime
+source ~/Applications/bash-wakatime/bash-wakatime.sh
 

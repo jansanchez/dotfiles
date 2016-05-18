@@ -35,3 +35,6 @@ export ENHANCD_FILTER
 
 ENHANCD_DIR=~/.enhancd
 export ENHANCD_DIR
+
+export PATH=~/.npm-global/bin:$PATH
+
