@@ -90,9 +90,9 @@ fi
 #fi
 
 # enhancd
-if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
-    source "~/.enhancd/zsh/enhancd.zsh"
-fi
+#if [ -f "~/.enhancd/zsh/enhancd.zsh" ]; then
+#    source "~/.enhancd/zsh/enhancd.zsh"
+#fi
 
 # Wakatime
 source ~/Applications/bash-wakatime/bash-wakatime.sh
