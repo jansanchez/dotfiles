@@ -29,7 +29,6 @@ ZSH_THEME="sunrise"
 #ZSH_THEME="gallifrey"
 #ZSH_THEME="fino"
 
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

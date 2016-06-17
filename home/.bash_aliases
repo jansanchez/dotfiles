@@ -2,7 +2,6 @@
 # ~/.bash_aliases
 
 #aliases for git
-
 alias  gam='echo " > git commit -am" && git commit -am '
 alias  grm='git rm'
 alias  gmv='git mv'
@@ -45,19 +44,12 @@ alias   gcount='echo " > git shortlog -s -n --all" && git shortlog -s -n --all'
 alias   gla='echo " > git log --author" && git log --author '
 
 alias   killer="tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}"
-
 alias   gusers="git log --format='%aN' | sort -u"
-
-alias	chat='echo " > sudo nc -vlp 23" && sudo nc -vlp 23'
-
+alias		chat='echo " > sudo nc -vlp 23" && sudo nc -vlp 23'
 alias   starcraft='wine ~/games/SC1.16/StarCraft.exe'
-
-alias   star='wine ~/shared/instaladores/games/SC1.16/StarCraft.exe'
-
 alias 	brillo='echo 6 | sudo tee  /sys/class/backlight/acpi_video0/brightness'
 
 # alises for off/reset of linux system
-
 alias	off='sudo halt'
 alias	reset='sudo reboot'
 
@@ -105,14 +97,13 @@ alias chrome="google-chrome &"
 alias f='thunar ./ &'
 
 # network
-
 alias redes='nmcli r'
 alias devices='nmcli dev'
 alias conectar='nmcli r wifi on'
 alias desconectar='nmcli r wifi off'
 
 function wifi() {
-	nmcli dev wifi connect $1 password $2 
+	nmcli dev wifi connect $1 password $2
 }
 
 function m() {
@@ -120,7 +111,7 @@ function m() {
 }
 
 # general shortcuts
-alias pro="cd ~/htdocs/"
+alias pro="cd ~/projects/"
 
 # be nice
 alias please="sudo"
@@ -255,5 +246,3 @@ export TERM=xterm-256color
 alias server='python -m SimpleHTTPServer'
 
 alias karaoke='pactl load-module module-loopback latency_msec=1'
-
-
