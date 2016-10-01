@@ -225,7 +225,6 @@ alias pbpaste='xclip -selection clipboard -o'
 alias ebal='sudo vim ~/.bash_aliases'
 alias cls='clear'
 
-
 # aliases for apt-get
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
@@ -246,3 +245,7 @@ export TERM=xterm-256color
 alias server='python -m SimpleHTTPServer'
 
 alias karaoke='pactl load-module module-loopback latency_msec=1'
+
+alias hdmi='pactl set-card-profile 0 output:hdmi-stereo'
+alias stereo='pactl set-card-profile 0 output:analog-stereo'
+
