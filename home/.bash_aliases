@@ -38,7 +38,7 @@ alias   gmd='git merge development'
 alias   gmr='git merge releases'
 alias   gmm='git merge master'
 alias   gff='git fetch -p && git rebase origin/\$(just_git_branch)'
-alias   gls='git log --pretty=format:"%C(reset)%h %C(yellow)%ad%C(yellow)%d %C(reset)%s%C(green) [%cn]" --decorate --date=short'
+alias   gls="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias   gclone='echo " > git clone " && git clone '
 alias   gcount='echo " > git shortlog -s -n --all" && git shortlog -s -n --all'
 alias   gla='echo " > git log --author" && git log --author '
@@ -225,7 +225,6 @@ alias pbpaste='xclip -selection clipboard -o'
 alias ebal='sudo vim ~/.bash_aliases'
 alias cls='clear'
 
-
 # aliases for apt-get
 alias sag='sudo apt-get '
 alias sagi='sudo apt-get install '
@@ -246,3 +245,10 @@ export TERM=xterm-256color
 alias server='python -m SimpleHTTPServer'
 
 alias karaoke='pactl load-module module-loopback latency_msec=1'
+
+alias hdmi='pactl set-card-profile 0 output:hdmi-stereo'
+alias stereo='pactl set-card-profile 0 output:analog-stereo'
+
+# download youtube videos
+alias ytmp4='youtube-dl -f mp4 '
+alias ytmp3='youtube-dl --extract-audio --audio-format mp3 '
