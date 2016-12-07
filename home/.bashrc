@@ -112,3 +112,5 @@ fi
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

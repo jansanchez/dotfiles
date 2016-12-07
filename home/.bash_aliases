@@ -249,3 +249,6 @@ alias karaoke='pactl load-module module-loopback latency_msec=1'
 alias hdmi='pactl set-card-profile 0 output:hdmi-stereo'
 alias stereo='pactl set-card-profile 0 output:analog-stereo'
 
+# download youtube videos
+alias ytmp4='youtube-dl -f mp4 '
+alias ytmp3='youtube-dl --extract-audio --audio-format mp3 '
