@@ -38,3 +38,4 @@ export ENHANCD_DIR
 
 export PATH=~/.npm-global/bin:$PATH
 
+PATH="/usr/local/heroku/bin:$PATH"
