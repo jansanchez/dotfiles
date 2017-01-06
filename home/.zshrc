@@ -154,3 +154,6 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+LC_CTYPE=es_ES.UTF-8
+LC_ALL=es_419.UTF-8
