@@ -28,4 +28,3 @@ cd ~/ && git clone https://github.com/jansanchez/dotfiles.git && cd dotfiles
 ```
 cd extras/bash/ && bash linux_tools.sh 
 ```
-

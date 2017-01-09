@@ -43,6 +43,8 @@ alias   gclone='echo " > git clone " && git clone '
 alias   gcount='echo " > git shortlog -s -n --all" && git shortlog -s -n --all'
 alias   gla='echo " > git log --author" && git log --author '
 
+alias   last="git log -1 HEAD --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
 alias   killer="tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}"
 alias   gusers="git log --format='%aN' | sort -u"
 alias		chat='echo " > sudo nc -vlp 23" && sudo nc -vlp 23'
