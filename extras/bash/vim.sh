@@ -3,8 +3,11 @@
 OPT_FOLDER="/opt"
 BUNDLE_FOLDER="~/.vim/bundle/"
 
-sudo apt-get update
-sudo apt-get install vim
+sudo add-apt-repository ppa:jonathonf/vim
+
+sudo apt update
+
+sudo apt install -y vim
 
 #vim --version
 
@@ -14,7 +17,9 @@ echo "[Vim Instalado]"
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 cd ~/.vim/autoload;
 
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim;
+wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
+
+#curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim;
 
 
 # Install plugins

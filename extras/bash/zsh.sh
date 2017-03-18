@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 
-curl -L http://install.ohmyz.sh | sh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+#curl -L http://install.ohmyz.sh | sh
 
 chsh -s /bin/zsh
-
 sudo chsh -s /bin/zsh
 
 cp ../.oh-my-zsh/themes/*.zsh-theme ~/.oh-my-zsh/themes/
@@ -24,8 +24,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search.git
 git clone https://github.com/sharat87/zsh-vim-mode.git
 
 # zsh-url-highlighter
-git clone https://github.com/ascii-soup/zsh-url-highlighter.git 
+git clone https://github.com/ascii-soup/zsh-url-highlighter.git
 
 
 echo "[Zsh instalado]"
-
