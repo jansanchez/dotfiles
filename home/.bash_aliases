@@ -229,8 +229,8 @@ alias cls='clear'
 
 # aliases for apt-get
 alias sag='sudo apt-get '
-alias sagi='sudo apt-get install '
-alias install='sudo apt-get install '
+alias sagi='sudo apt-get install -y '
+alias install='sudo apt-get install -y '
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 
