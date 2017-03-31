@@ -28,7 +28,7 @@ sudo apt-get install -y terminator git curl
 ```
 
 ```
-sudo apt-get install -y xubuntu-desktop gksu leafpad synaptic
+sudo apt-get install -y xubuntu-desktop gksu leafpad synaptic dconf-tools gdebi inxi catfish pavucontrol
 ```
 
 ```
@@ -61,6 +61,11 @@ cd ~/dotfiles/extras/bash/ && bash wine.sh
 
 ```
 cd ~/dotfiles/extras/bash/ && bash docker.sh
+```
+
+```
+sudo apt-get remove -y xfce4-terminal
+
 ```
 
 - https://www.digitalocean.com/community/tutorials/como-instalar-y-usar-docker-en-ubuntu-16-04-es
