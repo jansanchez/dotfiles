@@ -1,4 +1,0 @@
-
-if [ -f ~/.custom_functions ]; then
-    . ~/.custom_functions
-fi
