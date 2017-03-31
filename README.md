@@ -82,6 +82,14 @@ sudo apt-get update
 sudo apt-get install -y simplescreenrecorder
 ```
 
+```
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+```
+
+```
+sudo chmod a+rx /usr/local/bin/youtube-dl
+```
+
 
 - https://www.digitalocean.com/community/tutorials/como-instalar-y-usar-docker-en-ubuntu-16-04-es
 - https://sites.google.com/site/easylinuxtipsproject/first-xubuntu
