@@ -255,3 +255,7 @@ alias stereo='pactl set-card-profile 0 output:analog-stereo'
 alias ytmp4='youtube-dl -f mp4 '
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 '
 alias yt='ytmp4 --write-auto-sub --convert-subs srt ' 
+
+alias up='docker-compose up'
+alias down='docker-compose down'
+
