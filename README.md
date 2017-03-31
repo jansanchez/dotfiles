@@ -5,7 +5,7 @@ my dotfiles
 
 ### Si solo deseas dotfiles
 
-```js
+```
 cd ~ && git clone https://github.com/jansanchez/dotfiles.git && cd ~/dotfiles/ && bash bootstrap.sh
 ```
 
@@ -18,10 +18,10 @@ sudo apt-get update && sudo apt-get upgrade
 ```
 
 # Install Atom
-https://atom.io/
+- https://atom.io/
 
 # Install Google Chrome
-https://www.google.com/chrome/
+- https://www.google.com/chrome/
 
 ```
 sudo apt-get install -y terminator git curl
@@ -40,22 +40,11 @@ sudo apt-get install -y gnome-software synapse xfce4-goodies xfce4-netload-plugi
 ```
 
 ```
-sudo apt-get remove --purge libreoffice-*
-```
-
-```
-sudo apt-get clean
-```
-
-```
-sudo apt-get autoremove
+sudo apt-get remove --purge libreoffice-* && sudo apt-get clean && sudo apt-get autoremove
 ```
 
 ```
 cd ~ && git clone https://github.com/jansanchez/dotfiles.git
-```
-```
-cd ~/dotfiles/extras/bash/
 ```
 
 ```
@@ -73,7 +62,6 @@ cd ~/dotfiles/extras/bash/ && bash wine.sh
 ```
 cd ~/dotfiles/extras/bash/ && bash docker.sh
 ```
-
 
 - https://www.digitalocean.com/community/tutorials/como-instalar-y-usar-docker-en-ubuntu-16-04-es
 - https://sites.google.com/site/easylinuxtipsproject/first-xubuntu
