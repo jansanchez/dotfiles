@@ -118,11 +118,10 @@ alias pro="cd ~/projects/"
 # be nice
 alias please="sudo"
 
+colorflag="-G"
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
-else # OS X `ls`
-	colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -241,8 +240,6 @@ alias gmail='google-chrome https://gmail.com'
 
 # aliases for edit
 
-export TERM=xterm-256color
-
 # local server
 alias server='python -m SimpleHTTPServer'
 
@@ -255,6 +252,17 @@ alias stereo='pactl set-card-profile 0 output:analog-stereo'
 alias ytmp4='youtube-dl -f mp4 '
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 '
 alias yt='ytmp4 --write-auto-sub --convert-subs srt '
+
+alias dps='docker ps'
+
+function drop() {
+	if [[ "$1" = "all" ]]; then
+		docker rm $(dps -aq);
+	else
+		echo "use 'all'"
+	fi
+}
+
 
 alias up='docker-compose up'
 alias down='docker-compose down'
