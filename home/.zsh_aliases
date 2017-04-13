@@ -214,10 +214,8 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 alias androide="bash /opt/android-studio/bin/studio.sh &"
-alias home='cd ~/'
 
-alias tmuxd='~/dotfiles/tmxs/development'
-alias tmuxjp='~/dotfiles/tmxs/jqueryplugins'
+alias home='cd ~/'
 
 #Utils#
 alias szsh='source ~/.zshrc'
@@ -262,7 +260,6 @@ function drop() {
 		echo "use 'all'"
 	fi
 }
-
 
 alias up='docker-compose up'
 alias down='docker-compose down'
