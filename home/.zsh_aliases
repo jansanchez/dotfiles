@@ -268,3 +268,6 @@ alias up='docker-compose up'
 alias down='docker-compose down'
 
 alias linux='cat /etc/*-release'
+
+# ssh
+alias sshs='eval "$(ssh-agent -s)"' # Start the ssh-agent in the background
