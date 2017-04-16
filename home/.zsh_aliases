@@ -96,7 +96,6 @@ alias j='cd .. && '
 alias st='sublime &'
 alias firefox="firefox &"
 alias chrome="google-chrome &"
-alias f='thunar ./ &'
 
 # network
 alias redes='nmcli r'
