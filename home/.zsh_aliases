@@ -42,6 +42,7 @@ alias   gls="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias   gclone='echo " > git clone " && git clone '
 alias   gcount='echo " > git shortlog -s -n --all" && git shortlog -s -n --all'
 alias   gla='echo " > git log --author" && git log --author '
+alias difference='git gui'
 
 alias   last="git log -1 HEAD --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
@@ -268,3 +269,5 @@ alias up='docker-compose up'
 alias down='docker-compose down'
 
 alias linux='cat /etc/*-release'
+
+alias youtube='docker run --rm --user $UID:$GID -v $PWD:/downloads jansanchez/youtube '
