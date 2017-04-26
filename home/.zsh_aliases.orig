@@ -266,6 +266,9 @@ alias down='docker-compose down'
 
 alias linux='cat /etc/*-release'
 
+<<<<<<< HEAD
 alias youtube='docker run --rm --user $UID:$GID -v $PWD:/downloads jansanchez/youtube '
+=======
 # ssh
 alias sshs='eval "$(ssh-agent -s)"' # Start the ssh-agent in the background
+>>>>>>> 0e81c7303348e2534fdf3c87d54e27038ba255cb
