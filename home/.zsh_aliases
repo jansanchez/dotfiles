@@ -263,6 +263,7 @@ function drop() {
 
 alias up='docker-compose up'
 alias down='docker-compose down'
+alias speedTest='cd ~/projects/docker/dockerfiles/speed-test/ && make up'
 
 alias linux='cat /etc/*-release'
 
