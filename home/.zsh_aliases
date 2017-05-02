@@ -266,6 +266,7 @@ alias down='docker-compose down'
 alias speedTest='cd ~/projects/docker/dockerfiles/speed-test/ && make up'
 
 alias linux='cat /etc/*-release'
+alias users='cat /etc/passwd'
 
 alias youtube='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl '
 # ssh
