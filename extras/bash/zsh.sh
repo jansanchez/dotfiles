@@ -23,5 +23,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search.git
 # zsh-url-highlighter
 git clone https://github.com/ascii-soup/zsh-url-highlighter.git
 
+# zsh-wakatime
+git clone https://github.com/wbinglee/zsh-wakatime.git
 
 echo "[Zsh instalado]"
