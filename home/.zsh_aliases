@@ -271,3 +271,5 @@ alias users='cat /etc/passwd'
 alias youtube='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl '
 # ssh
 alias sshs='eval "$(ssh-agent -s)"' # Start the ssh-agent in the background
+# Browser
+alias surf='google-chrome '
