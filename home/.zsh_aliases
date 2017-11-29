@@ -261,6 +261,10 @@ function drop() {
 	fi
 }
 
+function jira() {
+	google-chrome https://orbisunt.atlassian.net/browse/$1
+}
+
 alias up='docker-compose up'
 alias down='docker-compose down'
 alias speedTest='cd ~/projects/docker/dockerfiles/speed-test/ && make up'
