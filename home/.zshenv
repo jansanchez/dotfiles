@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jan/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 export TERM=xterm-256color
 
