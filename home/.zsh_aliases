@@ -268,6 +268,7 @@ function jira() {
 alias up='docker-compose up'
 alias down='docker-compose down'
 alias speedTest='cd ~/projects/docker/dockerfiles/speed-test/ && make up'
+alias speedy='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
 
 alias linux='cat /etc/*-release'
 alias userlist="cat /etc/passwd"
