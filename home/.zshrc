@@ -71,7 +71,7 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-url-highlighter zsh-wakatime)
+plugins=(git zsh-syntax-highlighting zsh-history-substring-search zsh-url-highlighter zsh-wakatime zsh-background-notify)
 
 source $ZSH/oh-my-zsh.sh
 

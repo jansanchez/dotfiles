@@ -26,4 +26,7 @@ git clone https://github.com/ascii-soup/zsh-url-highlighter.git
 # zsh-wakatime
 git clone https://github.com/wbinglee/zsh-wakatime.git
 
+# zsh-notify
+git clone https://github.com/t413/zsh-background-notify.git
+
 echo "[Zsh instalado]"
