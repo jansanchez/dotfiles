@@ -1,32 +1,40 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+mkdir -p "$HOME/.local/bin"
+export PATH="$HOME/.local/bin:$PATH"
+
 # Starship
 if ! command -v starship >/dev/null 2>&1; then
-  curl -sS https://starship.rs/install.sh | sh -s -- -y
+  curl -sS https://starship.rs/install.sh | sh -s -- -y -b "$HOME/.local/bin"
 fi
 
 # mise
 if ! command -v mise >/dev/null 2>&1; then
-  curl https://mise.run | sh
+  curl -fsSL https://mise.run | sh
 fi
 
-# oh-my-zsh (solo si no existe)
+# oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-# Neovim estable via bob si no existe nvim o es muy viejo
+# Neovim via bob
 if ! command -v nvim >/dev/null 2>&1; then
   curl -fsSL https://github.com/MordechaiHadad/bob/releases/latest/download/bob-linux-x86_64.zip -o /tmp/bob.zip
   rm -rf /tmp/bob
   unzip -q /tmp/bob.zip -d /tmp/bob
-  sudo mv /tmp/bob/bob-linux-x86_64/bob /usr/local/bin/bob
-  bob install stable
-  bob use stable
+  install -m 755 /tmp/bob/bob-linux-x86_64/bob "$HOME/.local/bin/bob"
+
+  "$HOME/.local/bin/bob" install stable
+  "$HOME/.local/bin/bob" use stable
+
+  if [ -x "$HOME/.local/share/bob/nvim-bin/nvim" ]; then
+    ln -sf "$HOME/.local/share/bob/nvim-bin/nvim" "$HOME/.local/bin/nvim"
+  fi
 fi
 
 # TPM para tmux
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 fi
