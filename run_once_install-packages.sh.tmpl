@@ -2,8 +2,14 @@
 set -euo pipefail
 
 if command -v apt >/dev/null 2>&1; then
-  apt update
-  apt install -y \
+  if [ "$(id -u)" -eq 0 ]; then
+    APT="apt"
+  else
+    APT="sudo apt"
+  fi
+
+  $APT update
+  $APT install -y \
     curl \
     git \
     unzip \
