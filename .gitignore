@@ -1,0 +1,136 @@
+# ==============================
+
+# DOTFILES / CHEZMOI
+
+# ==============================
+
+# chezmoi local config (secretos)
+
+.chezmoi.toml
+.chezmoi.toml.tmpl.local
+
+# datos sensibles (si usas templates locales)
+
+*.local
+*.private
+
+# ==============================
+
+# SECRETOS / ENV
+
+# ==============================
+
+.env
+.env.*
+*.secret
+*.key
+*.pem
+*.gpg
+
+# SSH (NUNCA subir)
+
+.ssh/
+**/id_rsa
+**/id_ed25519
+
+# ==============================
+
+# GIT / SISTEMA
+
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+
+# EDITORES
+
+# ==============================
+
+# VS Code
+
+.vscode/
+
+# JetBrains
+
+.idea/
+
+# ==============================
+
+# NEOVIM
+
+# ==============================
+
+# plugins instalados (LazyVim / lazy.nvim)
+
+.config/nvim/lazy/
+.config/nvim/.lazy/
+.config/nvim/mason/
+.config/nvim/site/
+
+# swap / backup / undo
+
+*.swp
+*.swo
+*~
+*.un~
+
+# logs
+
+.config/nvim/log
+
+# ==============================
+
+# TMUX
+
+# ==============================
+
+.tmux/plugins/
+
+# ==============================
+
+# ZSH
+
+# ==============================
+
+# cache
+
+.zsh_history
+.zcompdump*
+
+# oh-my-zsh plugins descargados
+
+.oh-my-zsh/custom/plugins/*
+.oh-my-zsh/custom/themes/*
+
+# ==============================
+
+# MISE (version manager)
+
+# ==============================
+
+# cache local
+
+.mise/
+~/.local/share/mise/
+
+# ==============================
+
+# NODE / PYTHON (por si acaso)
+
+# ==============================
+
+node_modules/
+**pycache**/
+*.pyc
+
+# ==============================
+
+# LOGS / TEMP
+
+# ==============================
+
+*.log
+tmp/
+temp/
